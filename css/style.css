@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap');
+
+a{
+	text-decoration: none;
+}
+.outer_wrapper{
+	width: 100vw;
+	height: 100vh;
+	font-size: 15px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.inner_wrapper{
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.slide{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
+.active-slide{
+	opacity: 1;
+	z-index: 2;
+}
+
+.quiz-container{
+	position: relative;
+	height: 200px;
+	/*margin-top: 40px;*/
+}
+
+.buttons_wrapper{
+	width: 100vw;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #8e2323;
+    font-size: 1.5em;
+    color: #fff;
+}
+button#prev,
+button#next,
+button#submit{
+	padding: 35px 30px;
+    border: solid 2px;
+    border-radius: 50%;
+}
+#results{
+	position: absolute;
+    text-align: center;
+    bottom: 180px;
+    margin: 0 auto;
+    width: inherit;
+
+}
+.result_score{
+    display: block;
+    font-size: 1.5em;
+}
+.score_face{
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+.restart{
+	display: inline-block;
+	padding: 3px 20px;
+	background: #bccde4;
+	border-radius: 20px;
+	color: #704861;
+	box-shadow: 0 5px 0;
+	text-decoration: none;
+}
+.restart:active{
+	transform: translateY(5px);
+	box-shadow: none;
+}
+
+label{
+	display: block;
+    width: 80vw;
+    margin: 30px auto;
+}
+span{
+	display: inline-block;
+	border: solid 2px #f16868;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70vw;
+    transition: 200ms;
+}
+span:hover{
+	cursor: pointer;
+}
+input[type="radio"]{
+	display: none;
+}
+input[type="radio"]:checked + span{
+	background: #f16868;
+	color: #fff;
+}
+.question{
+	font-size: 1.5em;
+}
+.answers{
+	font-size: 1.3em;
+}
