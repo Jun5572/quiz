@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|M+PLUS+Rounded+1c&display=swap');
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.outer_wrapper{
+	/*position: relative;*/
+	width: 100%;
+	/*min-height: 100vh;*/
+}
+.inner_wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.title{
+	text-align: center;
+}
+.start_button{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.start_button a{
+	display: inline-block;
+	width: 40vw;
+	font-size: 2em;
+	letter-spacing: 1px;
+	/*padding: 10px;*/
+	background: #fdc803;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+.app_logo{
+	object-fit: cover;
+    transform: scale(1.5);
+    width: 100%;
+    margin-bottom: 50px;
+}

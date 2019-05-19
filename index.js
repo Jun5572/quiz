@@ -69,9 +69,12 @@
 		};
 		result.innerHTML = `<p class="result_score">${questions_items.length}問中${num_correct}問正解です！</p>
 							<div class="score_face">${face_type}</div>
-							<a href="index.html" class="restart" data-js="restart">初めからやり直す</a>`;
-	}
+							<p class="restart" data-js="restart">Restart</p>`;
+		let restart_button = document.querySelector('[data-js="restart"]');
+		console.log(restart_button);
+		restart_button.addEventListener("click", restartQuestion);
 
+	}
 
 	//スライド
 	let current_slide = 0;
@@ -108,8 +111,11 @@
 	};
 
 	function restartQuestion(){
-		window.confirm('初めからやり直しますか？');
-		location.reload();
+		if(confirm('初めからやり直しますか？')){
+			location.href = 'index.html';
+		} else {
+			return;
+		}
 	}
 
 	buildQuiz();
@@ -119,6 +125,5 @@
 	submit_button.addEventListener( "click", showResult );
 	prev_button.addEventListener( "click", showPrevQuestion );
 	next_button.addEventListener( "click", showNextQuestion );
-	// restart_button.addEventListener( "click", restartQuestion );
 
 })();

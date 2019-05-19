@@ -5,18 +5,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Quiz</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
 	<main class="outer_wrapper">
 		<div class="inner_wrapper">
-			<img class="app_logo" src="images/Quizy-logo.png">
-			<div class="start_button">
-				<a href="questions.html">Start</a>
+			<div class="quiz-container">
+				<div id="quiz"></div>
 			</div>
+			<div id="results"></div>
 		</div>
+		<section class="buttons_wrapper">
+			<button id="prev">Prev</button>
+			<button id="submit">Go!</button>
+			<button id="next">Next</button>
+		</section>
 	</main>
+	<script src="questions.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>
