@@ -39,3 +39,48 @@ a{
     width: 100%;
     margin-bottom: 50px;
 }
+
+
+/*pc*/
+@media screen and (min-width:1025px) {
+	.inner_wrapper{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.app_logo{
+		display: block;
+	    width: 50%;
+	    height: 300px;
+		margin: 0 auto 90px;
+		object-fit: cover;
+	    /*transform: scale(1.5);*/
+	}
+}
+
+/*tablet*/
+@media only screen and (min-width:640px) and (max-width:1024px) {
+	.inner_wrapper{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.app_logo{
+		display: block;
+	    width: 100%;
+		margin: 0 auto 150px;
+		object-fit: cover;
+	    /*transform: scale(1.5);*/
+	}
+	.start_button a {
+	    display: inline-block;
+	    width: 40vw;
+	    font-size: 2em;
+	    letter-spacing: 1px;
+	    padding: 10px;
+	    background: #fdc803;
+	    font-family: 'Baloo Bhai', cursive;
+	}
+}
